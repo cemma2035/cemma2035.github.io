@@ -21,7 +21,7 @@ function Home() {
     };
     
     return (
-        <div className="home-full col-12">
+        <div className="home-full col-12 px-0">
             <div className=" col-12 px-0 row mx-0 hello-full">
                 <nav class="navbar bg-dark my-navbar col-12">
                     {/* <a class="navbar-brand" href="#">
