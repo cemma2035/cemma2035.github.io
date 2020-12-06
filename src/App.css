@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nerko+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=East+Sea+Dokdo&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap');
+
+.page-full {
+  min-height: 100vh;
+  font-family: 'Montserrat', sans-serif;
+  background: #000;
+  transition: 1s;
+}
+html {
+  scroll-behavior: smooth;
+}
+.scroller{
+  overflow: auto;
+  scrollbar-width: thin;
+  scrollbar-color:#55A871;
+}
+.scroller::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+.scroller::-webkit-scrollbar-track {
+  background: grey;
+  border-radius: 10px;
+  display: none;
+}
+
+.scroller::-webkit-scrollbar-thumb {
+  color: black;
+  border-radius: 10px;
+  background: grey;
+}
+.scroller::-webkit-scrollbar-thumb:hover {
+  background:  white;
+  border-color: #3f3d56;
+  border-radius: 10px;
+}
+@-webkit-keyframes shifting-color {
+  0%{background-position:2% 0%}
+  50%{background-position:99% 100%}
+  100%{background-position:2% 0%}
+}
+@-moz-keyframes shifting-color {
+  0%{background-position:2% 0%}
+  50%{background-position:99% 100%}
+  100%{background-position:2% 0%}
+}
+@keyframes shifting-color {
+  0%{background-position:2% 0%}
+  50%{background-position:99% 100%}
+  100%{background-position:2% 0%}
+}
+.end {
+  height: 8vh;
+  background: #191919;
+}
+.end p {
+  color: white;
+  font-family: 'Do Hyeon', sans-serif;
+}
