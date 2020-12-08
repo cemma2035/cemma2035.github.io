@@ -4,6 +4,7 @@
     background-size: 100%;
     background-position: center;
     background-repeat: repeat;
+    overflow-x: hidden;
 }
 .hello-full {
     min-height: 100vh;
@@ -46,9 +47,9 @@
     background-position: center;
     background-repeat: no-repeat;
 
-    -webkit-animation: astronaut-sway 80s linear infinite;
-    -moz-animation: astronaut-sway 80s linear infinite;
-    animation: astronaut-sway 80s linear infinite;
+    -webkit-animation: astronaut-sway 80s, astronaut-rotate 150s linear infinite;
+    -moz-animation: astronaut-sway 80s, astronaut-rotate 150s linear infinite;
+    animation: astronaut-sway 80s, astronaut-rotate 150s linear infinite;
 }
 .emma-gif-con {
     height: 60vh;
@@ -75,12 +76,12 @@
     border-radius: 10px;
     height: 100%;
     width: 100%;
-    /* filter: grayscale(100%); */
+    filter: grayscale(100%);
     transition: 0.5s;
 }
 .portfolio-individual img:hover {
     cursor: pointer;
-    filter: grayscale(0%);
+    /* filter: grayscale(0%); */
 }
 .portfolio-name a{
     font-weight: bold;
@@ -159,11 +160,11 @@
     height: 100%;
     width: 100%;
     border-radius: 5px;
-    /* filter: grayscale(100%); */
+    filter: grayscale(100%);
     transition: 0.5s;
 }
 .indiv-portfolio-image img:hover{
-    filter: grayscale(0%);
+    /* filter: grayscale(0%); */
 }
 
 .indiv-portfolio-info {
@@ -241,11 +242,47 @@
         margin-top: 15vh;
     }
 }
+.portfolio-astronaut-con-1 {
+    width: 50vh;
+    height: 50vh;
+    background: url('../../images/astronaut-3.png');
+    background-size: 30%;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    -webkit-animation: astronaut-sway 120s, astronaut-rotate 120s linear infinite;
+    -moz-animation: astronaut-sway 120s, astronaut-rotate 120s linear infinite;
+    animation: astronaut-sway 120s, astronaut-rotate 120s linear infinite;
+}
+.portfolio-astronaut-con-2 {
+    width: 50vh;
+    height: 50vh;
+    background: url('../../images/astronaut-4.png');
+    background-size: 30%;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    -webkit-animation: astronaut-sway-2 120s, astronaut-rotate-invert 120s linear infinite;
+    -moz-animation: astronaut-sway-2 120s, astronaut-rotate-invert 120s linear infinite;
+    animation: astronaut-sway-2 120s, astronaut-rotate-invert 120s linear infinite;
+}
+.portfolio-astronaut-con-3 {
+    width: 50vh;
+    height: 50vh;
+    background: url('../../images/astronaut-5.png');
+    background-size: 30%;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    -webkit-animation: astronaut-sway-3 120s, astronaut-rotate 120s linear infinite;
+    -moz-animation: astronaut-sway-3 120s, astronaut-rotate 120s linear infinite;
+    animation: astronaut-sway-3 120s, astronaut-rotate 120s linear infinite;
+}
 @-webkit-keyframes astronaut-sway {
     0%{background-position:center}
-    25%{background-position: 0% 50%;}
-    50%{background-position: 100% 50%}
-    75%{background-position:50% 100%} 
+    25%{background-position: 0% 0%;}
+    50%{background-position: 100% 0%}
+    75%{background-position:100% 100%} 
     100%{background-position:center}
   }
   @-moz-keyframes astronaut-sway {
@@ -261,4 +298,88 @@
     50%{background-position: 100% 0%}
     75%{background-position:100% 100%} 
     100%{background-position:center}
+  }
+@-webkit-keyframes astronaut-sway-2 {
+    0%{background-position:center}
+    25%{background-position: 0% 100%;}
+    50%{background-position: 100% 0%}
+    75%{background-position:50% 100%} 
+    100%{background-position:center}
+  }
+  @-moz-keyframes astronaut-sway-2 {
+    0%{background-position:center}
+    25%{background-position: 0% 100%;}
+    50%{background-position: 100% 0%}
+    75%{background-position:50% 100%} 
+    100%{background-position:center}
+  }
+  @keyframes astronaut-sway-2 {
+    0%{background-position:center}
+    25%{background-position: 0% 100%;}
+    50%{background-position: 100% 0%}
+    75%{background-position:50% 100%} 
+    100%{background-position:center}
+  }
+@-webkit-keyframes astronaut-sway-3 {
+    0%{background-position:center}
+    25%{background-position: 100% 0%;}
+    50%{background-position: 100% 50%}
+    75%{background-position: 0% 0%} 
+    100%{background-position:center}
+  }
+  @-moz-keyframes astronaut-sway-3 {
+    0%{background-position:center}
+    25%{background-position: 100% 0%;}
+    50%{background-position: 100% 50%}
+    75%{background-position: 0% 0%} 
+    100%{background-position:center}
+  }
+  @keyframes astronaut-sway-3 {
+    0%{background-position:center}
+    25%{background-position: 100% 0%;}
+    50%{background-position: 100% 50%}
+    75%{background-position: 0% 0%} 
+    100%{background-position:center}
+  }
+  @-webkit-keyframes astronaut-rotate {
+    0%{transform: rotate(0deg);}
+    25%{transform: rotate(90deg);}
+    50%{transform: rotate(180deg);}
+    75%{transform: rotate(270deg);} 
+    100%{transform: rotate(360deg);}
+  }
+  @-moz-keyframes astronaut-rotate {
+    0%{transform: rotate(0deg);}
+    25%{transform: rotate(90deg);}
+    50%{transform: rotate(180deg);}
+    75%{transform: rotate(270deg);} 
+    100%{transform: rotate(360deg);}
+  }
+  @keyframes astronaut-rotate {
+    0%{transform: rotate(0deg);}
+    25%{transform: rotate(90deg);}
+    50%{transform: rotate(180deg);}
+    75%{transform: rotate(270deg);} 
+    100%{transform: rotate(360deg);}
+  }
+  @-webkit-keyframes astronaut-rotate-invert {
+    0%{transform: rotate(0deg);}
+    25%{transform: rotate(-90deg);}
+    50%{transform: rotate(-180deg);}
+    75%{transform: rotate(-270deg);} 
+    100%{transform: rotate(-360deg);}
+  }
+  @-moz-keyframes astronaut-rotate-invert {
+    0%{transform: rotate(0deg);}
+    25%{transform: rotate(-90deg);}
+    50%{transform: rotate(-180deg);}
+    75%{transform: rotate(-270deg);} 
+    100%{transform: rotate(-360deg);}
+  }
+  @keyframes astronaut-rotate-invert {
+    0%{transform: rotate(0deg);}
+    25%{transform: rotate(-90deg);}
+    50%{transform: rotate(-180deg);}
+    75%{transform: rotate(-270deg);} 
+    100%{transform: rotate(-360deg);}
   }

@@ -8,7 +8,7 @@ function App() {
         <div className="col-12 page-full px-0">
           <Home />
         </div>
-        <div className="end col-12">
+        <div className="end col-12 text-center">
           <p className="mt-3">Made all the way through with react!</p>
         </div>
       </div>
